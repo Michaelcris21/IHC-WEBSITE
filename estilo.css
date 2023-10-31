@@ -7,8 +7,7 @@
 
 body{
     height: 100vh;
-    background-color: #000;
-    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.38ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlifHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80') ;
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
 }
@@ -19,7 +18,7 @@ li {
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 1rem;
 }
 
@@ -53,15 +52,16 @@ header{
 }
 
 .navbar .toggle_btn{
-    color: #fff;
+    color: #000000;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+
 }
 
 .action_btn{
     background-color: orange;
-    color: #fff;
+    color: #000000;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -74,7 +74,7 @@ header{
 
 .action_btn:hover {
     transform: scale(1.05);
-    color: #fff;
+    color: #000000;
 }
 
 .action-btn:active {
@@ -89,7 +89,7 @@ header{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(225, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.178);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -100,12 +100,14 @@ header{
     height: 240px;
 }
 
-.dropdown_menu li{
+.dropdown_menu li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
 
 .dropdown_menu .action-btn{
     width: 100%;
@@ -121,7 +123,7 @@ section#hero{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 #hero h1{
@@ -131,16 +133,17 @@ section#hero{
 
 /* RESPONSIVE DESING */
 
-@media(max-width: 992px){
+@media (max-width: 992px) {
     .navbar .links,
-    .navbar .action_btn{
+    .navbar .action_btn {
         display: none;
     }
-    .navbar .toggle_btn{
+    .navbar .toggle_btn {
         display: block;
     }
-    .dropdown_menu{
+    .dropdown_menu {
         display: block;
+        background-color: rgba(0, 0, 0, 0.7); /* Color negro transparente */
     }
 }
 
