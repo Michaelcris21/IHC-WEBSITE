@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --switch-btn-bg: #ccc;
+    --accent-color: #dc9b54;
+    --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
