@@ -84,7 +84,7 @@ body{
 }
 
 .form-information-childs h2{
-    color: #333;
+    color: #ffffff;
     font-size: 2rem;
 }
 
@@ -150,4 +150,42 @@ body{
 
 .form input[type="submit"]:hover{
     background-color: #7a7a9a;
+}
+
+/*RESPONSIVE FORM*/
+
+@media screen and (max-width: 750px) {
+    
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    html{
+        font-size: 10px;
+    }
+
+    .container-form{
+        height: auto;
+        flex-direction: column;
+
+    }
+
+    .information{
+        width: 100%;
+        padding: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .form-information{
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0px;
+    }
 }
