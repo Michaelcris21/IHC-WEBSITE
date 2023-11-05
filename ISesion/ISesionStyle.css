@@ -27,16 +27,31 @@ body {
     height: 20px; /* Ajusta la altura según el tamaño de tus imágenes */
   }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
 
-    background-image: url("/imagenes/fondo23.jpg") ;
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/imagenes/Microsoft_logo.svg.png");
     background-position: center;
-    background-size: cover;
+    background-size:15000ch;
+    filter: blur(60px); /* Aplica un efecto de desenfoque al fondo */
+    opacity: 0.5; /* Ajusta la opacidad para oscurecer el fondo */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative; /* Importante para que el ::before ocupe el espacio adecuado */
+  background: rgba(0, 0, 0, 0.719); /* Color oscuro para superponer al fondo */
 }
 .form-box{
     position: relative;
@@ -49,7 +64,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
+
 h2{
     font-size: 2em;
     color: #fff;
