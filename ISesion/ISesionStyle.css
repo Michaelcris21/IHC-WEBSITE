@@ -4,6 +4,29 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; /* Ajusta el ancho según el tamaño de tus imágenes */
+    height: 20px; /* Ajusta la altura según el tamaño de tus imágenes */
+  }
+
 section{
     display: flex;
     justify-content: center;
@@ -74,6 +97,16 @@ input:valid ~ label{
     top: 20px;
     margin-top: 30px;
 }
+
+.inputbox i{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+    margin-top: 30px;
+}
+
 .forget{
     margin: -15px 0 15px;
     font-size: .9em;
@@ -115,5 +148,5 @@ button{
 }
 
 .register p a:hover{
-    text-decoration: underline;
+    text-decoration: underline;
 }
