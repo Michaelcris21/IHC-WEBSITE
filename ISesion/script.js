@@ -1,17 +1,17 @@
 const passwordInput = document.getElementById('passwordInput');
 const togglePassword = document.getElementById('togglePassword');
-
-let passwordVisible = false;
+console.log(togglePassword.className);
 
 togglePassword.addEventListener('click', () => {
-  passwordVisible = !passwordVisible;
-  if (passwordVisible) {
+  if (passwordInput.type === 'password') {
     passwordInput.type = 'text';
-    togglePassword.src = 'lock-open-alt-solid-24.png' // Ruta a tu imagen de ocultar contraseña
-    togglePassword.alt = 'Ocultar Contraseña';
+    togglePassword.classList.remove('bx-lock-open');
+    togglePassword.classList.add('bx-lock');
   } else {
     passwordInput.type = 'password';
-    togglePassword.src = 'lock-alt-solid-24.png'; // Ruta a tu imagen de mostrar contraseña
-    togglePassword.alt = 'Mostrar Contraseña';
+    togglePassword.classList.remove('bx-lock');
+    togglePassword.classList.add('bx-lock-open');
   }
 });
+
+

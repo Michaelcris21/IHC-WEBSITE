@@ -10,7 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
   }
   
   .password-container {
@@ -18,6 +17,7 @@ body {
   }
   
   .toggle-icon {
+    margin-top: 14px;
     position: absolute;
     top: 50%;
     right: 10px;
@@ -73,6 +73,18 @@ h2{
     pointer-events: none;
     transition: .45s;
 }
+
+.inputbox .email-icon {
+    margin-top: 35px;
+    font-size: 25px; /* Tamaño del ícono de email */
+}
+
+.inputbox .lock-icon {
+    margin-top: 35px;
+    font-size: 25px; /* Tamaño del ícono de lock */
+}
+
+
 input:focus ~ label,
 input:valid ~ label{
     top: 30px;
@@ -89,19 +101,11 @@ input:valid ~ label{
     color: #fff;
 
 }
-.inputbox ion-icon{
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    top: 20px;
-    margin-top: 30px;
-}
 
 .inputbox i{
     position: absolute;
     right: 8px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
     top: 20px;
     margin-top: 30px;

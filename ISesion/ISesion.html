@@ -17,13 +17,13 @@
                 <form action="">
                     <h2>Iniciar Sesión</h2>
                     <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
+                        <i class='bx bxs-envelope toggle-icon email-icon' ></i>
                         <input type="email" required>
                         <label for="">Email</label>
                     </div>
                     <div class="inputbox">
                         <input type="password" id="passwordInput" required>
-                        <img id="togglePassword" class="toggle-icon" src="lock-alt-solid-24.png" alt="">
+                        <i id="togglePassword" class='bx bx-lock toggle-icon lock-icon' ></i>
                         <label for="">Contraseña</label>
                     </div>
                     <div class="forget">
@@ -37,6 +37,11 @@
             </div>
         </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
     <script src="script.js"></script>
 </body>
 </html>
