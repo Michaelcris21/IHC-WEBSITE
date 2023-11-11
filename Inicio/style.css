@@ -34,6 +34,7 @@ nav{
 
 .nav-logo{
     max-width: 100px;
+    margin-right: auto;
 }
 
 .nav-links{
@@ -194,3 +195,179 @@ section .header{
         grid-template-columns: 1fr 150px;
     }
 }
+
+/* Estilo específico para la sección de Servicios */
+.Servicios {
+    background-color: #ffea00; /* Amarillo */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Estilo específico para la sección de Contacto */
+.Contacto {
+    background-color: #fff; /* Fondo blanco */
+    color: #333;
+}
+
+/* Estilo para el formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: #fff; /* Letras blancas */
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde oscuro al pasar el ratón */
+}
+
+/* Estilo responsivo para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+}
+
+/* Estilo específico para la sección de AcercaDe */
+.AcercaDe {
+    background-color: #ffea00; /* Amarillo */
+    color: #333;
+}
+
+/* Estilo específico para la sección de Ayuda */
+.Ayuda {
+    background-color: #c2f9cb; /* Verde hoja claro */
+    color: #333;
+}
+
+/* Estilo responsivo para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    section {
+        padding: 30px;
+    }
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Estilo específico para la sección de Servicios */
+.Servicios {
+    background-color: #fff; /* Fondo blanco */
+    color: #333;
+}
+
+/* Estilo para las categorías */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categoria {
+    width: 150px;
+    margin: 15px;
+    text-align: center;
+}
+
+.categoria img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo responsivo para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .categoria {
+        width: 100%;
+    }
+}
+
+/* Estilo específico para la sección AcercaDe */
+.AcercaDe {
+    background-color: #fff; /* Fondo blanco */
+    color: #333;
+}
+
+/* Estilo para la descripción y la imagen en la sección AcercaDe */
+.descripcion {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.imagen {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo responsivo para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .descripcion, .imagen {
+        width: 100%;
+    }
+}
+
+.Ayuda {
+    background-color: #fff; /* Fondo blanco */
+    color: #333;
+}
+
+/* Estilo para el texto de preguntas frecuentes */
+.preguntas-frecuentes {
+    font-size: 20px;
+    color: #4CAF50; /* Verde */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.preguntas-frecuentes:hover {
+    color: #45a049; /* Verde oscuro al pasar el ratón */
+}
+
+/* Estilo para el icono de signo de interrogación */
+.faq-icon {
+    font-size: 24px;
+    color: #ffea00; /* Amarillo */
+    margin-top: 10px;
+}
+
+/* Estilo responsivo para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .preguntas-frecuentes {
+        font-size: 18px;
+    }
+}
+
+
