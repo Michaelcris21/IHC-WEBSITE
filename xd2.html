@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Consulta</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      max-width: 400px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form id="consultaForm">
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" name="nombres" required>
+
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" required>
+
+    <label for="alergia">¿Tiene alergia a algún medicamento?</label>
+    <select id="alergia" name="alergia">
+      <option value="no">No</option>
+      <option value="si">Sí</option>
+    </select>
+
+    <div id="alergiaDetails" style="display: none;">
+      <label for="medicamentos">Indique cuáles:</label>
+      <input type="text" id="medicamentos" name="medicamentos">
+    </div>
+
+    <label for="enfermedad">Enfermedad o Síntomas:</label>
+    <textarea id="enfermedad" name="enfermedad" rows="4"></textarea>
+
+    <label for="fecha">Fecha de consulta:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <button type="button" onclick="registrarConsulta()">Registrar Consulta</button>
+  </form>
+
+  <script>
+    function registrarConsulta() {
+      const nombres = document.getElementById('nombres').value;
+      const dni = document.getElementById('dni').value;
+      const tieneAlergia = document.getElementById('alergia').value === 'si';
+      const medicamentos = tieneAlergia ? document.getElementById('medicamentos').value : null;
+      const enfermedad = document.getElementById('enfermedad').value;
+      const fecha = document.getElementById('fecha').value;
+
+      // Puedes hacer algo con la información aquí, como enviarla a un servidor o mostrarla en la consola
+      console.log('Nombres:', nombres);
+      console.log('DNI:', dni);
+      console.log('Tiene alergia:', tieneAlergia);
+      console.log('Medicamentos alergia:', medicamentos);
+      console.log('Enfermedad o Síntomas:', enfermedad);
+      console.log('Fecha de consulta:', fecha);
+    }
+
+    document.getElementById('alergia').addEventListener('change', function() {
+      const alergiaDetails = document.getElementById('alergiaDetails');
+      alergiaDetails.style.display = this.value === 'si' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
