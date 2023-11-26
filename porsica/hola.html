@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Médico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Control - Médico</h1>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <h2>Opciones</h2>
+            <ul>
+                <li onclick="showOption('welcome')">Bienvenida</li>
+                <li onclick="showOption('summary')">Resumen del Paciente</li>
+                <li onclick="showOption('appointments')">Calendario de Citas</li>
+                <li onclick="showOption('medical-history')">Historial Clínico</li>
+                <li onclick="showOption('communication')">Comunicación con Paciente</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <p id="welcome-message">¡Bienvenido, Doctor!</p>
+            <div id="summary-content" class="hidden">
+                <h2>Resumen del Paciente</h2>
+                <p>Información del paciente...</p>
+            </div>
+
+            <div id="appointments-content" class="hidden">
+                <div id="calendar-container" class="hidden">
+                    <div class="header">
+                        <button onclick="previousMonth()">Anterior</button>
+                        <h2 id="month-year"></h2>
+                        <button onclick="nextMonth()">Siguiente</button>
+                    </div>
+                    <table id="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Domingo</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                                <th>Sábado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                    <div id="current-day"></div>
+                </div>
+                <p>Información del calendario...</p>
+            </div>
+
+            <div id="medical-history-content" class="hidden">
+                <h2>Historial Clínico</h2>
+                <p>Información del historial clínico...</p>
+            </div>
+
+            <div id="communication-content" class="hidden">
+                <h2>Comunicación con Paciente</h2>
+                <p>Enviar mensaje al paciente...</p>
+            </div>
+        </div>
+
+        <div class="next-appointment">
+            <h2>Próxima Cita</h2>
+            <p id="next-appointment-info">No hay citas programadas.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
