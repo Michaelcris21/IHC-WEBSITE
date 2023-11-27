@@ -8,6 +8,8 @@
     <title>TELEFARMA</title>
     <link rel="stylesheet" href="dashStyle.css">
     <link rel="stylesheet" href="StylesChat.css">
+    
+    <link rel="stylesheet" href="StylesAgend.css">
     <link rel="icon" href="/imagenes/Imagen1.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -338,7 +340,56 @@
 
         <div id="agendaContent" class="content-container">
             <!-- Contenido de la Agenda -->
+            <div class="main">
+                <code>
+                    <h1>AGENDA TU CITA MÉDICA ONLINE</h1>
+                    <p>Bienvenido a nuestro servicio de agendamiento de citas médicas en línea.</p>
+                </code>
+                <main2>
+                    <section2 class="appointment-form">
+                        <h2>Agendar una cita</h2>
+                        <form id="appointment-form">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
             
+                            <label for="date">Fecha:</label>
+                            <input type="date" id="date" name="date" required>
+            
+                            <label for="time">Hora:</label>
+                            <input type="time" id="time" name="time" required>
+            
+                            <label for="doctor">Doctor:</label>
+                            <select id="doctor" name="doctor" required>
+                                <option value="">Selecciona un doctor</option>
+                                <option value="doctor1">Doctor 1</option>
+                                <option value="doctor2">Doctor 2</option>
+                            </select>
+            
+                            <input type="submit" value="Agendar cita">
+                        </form>
+                    </section2>
+                    <section2 class="featured-doctors">
+                        <h2>Doctores destacados</h2>
+                        <div class="doctor">
+                            <img src="/imagenes/Doctor.png" alt="Doctor 1">
+                            <h3>Doctor 1    <br>⭐⭐⭐</h3>
+                        </div>
+                        <div class="doctor">
+                            <img src="/imagenes/Doctor.png" alt="Doctor 2">
+                            <h3>Doctor 2    <br>⭐⭐⭐</h3>
+                        </div>
+                        <div class="doctor">
+                            <img src="/imagenes/Doctor.png" alt="Doctor 1">
+                            <h3>Doctor 3    <br>⭐⭐⭐</h3>
+                        </div>
+                        <div class="doctor">
+                            <img src="/imagenes/Doctor.png" alt="Doctor 1">
+                            <h3>Doctor 4    <br>⭐⭐⭐</h3>
+                        </div>
+                    </section2>
+                </main2>
+                <script src="script.js"></script>
+            </div>
         </div>
 
         <div id="mensajesContent" class="content-container">

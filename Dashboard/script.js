@@ -60,3 +60,15 @@ document.querySelectorAll('.conversation-back').forEach(function(item) {
     })
 })
 // end: Coversation
+
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Aquí puedes manejar la lógica de la cita
+    alert('Cita agendada con éxito!');
+});
+
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Aquí puedes manejar la lógica de la cita
+    alert('Cita agendada con éxito!');
+});
