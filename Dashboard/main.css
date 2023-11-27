@@ -1,0 +1,101 @@
+
+.header{
+    width: 95%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    right: -35px;
+}
+
+.top-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px 0;
+
+}
+.top-icons img{
+    width: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.col-1{
+    flex-basis: 65%;
+
+}
+.col-2{
+    flex-basis: 33%;
+}
+.host-img{
+    width: 100%;
+    border-radius: 15px;
+}
+.contarols{
+    background-color: #1b8f43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.containerreu{
+    width: 1080px;
+}
+
+.contarols img{
+    width: 40px;
+    margin: 20px 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.contarols .call-icon{
+    width: 70px;
+
+}
+.contarols img:hover{
+    transform: translateY(-10px);
+
+}
+.joined{
+    background: #1b8f43;
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    color: #fff;
+
+}
+.joined div{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+
+}
+.joined img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.invite{
+    background: #1b8f43;
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    color: #fff;
+    margin-top: 75px;
+
+}
+.invite img{
+    margin-top: 20px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
